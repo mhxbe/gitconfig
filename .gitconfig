@@ -25,3 +25,6 @@
         reset-soft = reset HEAD --soft
         web = instaweb --httpd=webrick
         web-stop = instaweb --httpd=webrick --stop
+
+[core]
+        excludesfile = ~/.gitignore_global
