@@ -1,0 +1,27 @@
+[user]
+        name = MY_NAME
+        email = MY_EMAIL
+
+# [color]
+#       ui = auto
+[color "branch"]
+        current = green reverse bold
+        local = yellow
+        remote = magenta
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+        whitespace = red reverse
+[color "status"]
+        added = green
+        changed = yellow
+        untracked = blue
+
+[alias]
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+        reset-hard = reset HEAD --hard
+        reset-soft = reset HEAD --soft
+        web = instaweb --httpd=webrick
+        web-stop = instaweb --httpd=webrick --stop
