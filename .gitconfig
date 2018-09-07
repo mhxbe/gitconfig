@@ -28,3 +28,10 @@
 
 [core]
         excludesfile = ~/.gitignore_global
+
+[difftool "sourcetree"]
+        cmd = /Applications/WebStorm.app/Contents/MacOS/webstorm diff $LOCAL $PWD/$REMOTE
+        path =
+[mergetool "sourcetree"]
+        cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+        trustExitCode = true
